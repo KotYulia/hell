@@ -1,30 +1,7 @@
-@font-face {
-	font-family: "Century Gothic";
-	src: url(../fonts/CenturyGothic.ttf);
-	src: url(../fonts/CenturyGothic.eot);
-	src: url(../fonts/CenturyGothic.svg);
-	src: url(../fonts/CenturyGothic.woff);
-}
-@font-face {
-	font-family: "Code";
-	src: url(../fonts/Code-Light.ttf);
-	src: url(../fonts/Code-Light.otf);
-	src: url(../fonts/Code-Light.eot);
-	src: url(../fonts/Code-Light.svg);
-	src: url(../fonts/Code-Light.woff);
-}
-/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 body {
-	h1, p, span, a {
-		font: 400 10px 'Century Gothic', Regular;
-	}
-	h2 {
-		font: 300 10px 'Code', Light;
-	}
-	h1, h2 {
-		text-transform: uppercase;
-	}
 	ul {
 		list-style: none;
 	}
