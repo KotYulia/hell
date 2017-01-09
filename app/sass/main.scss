@@ -19,27 +19,42 @@ body {
 		list-style: none;
 	}
 }
-@media (min-width: 1201px) {
+@media (min-width: 1260px) {
 	.container {
 		width: 120rem;
-		margin: 0 auto;
-		padding: 0;
+
 	}
 }
-@media (max-width: 1200px) {
+@media (max-width: 1261px) {
 	.container {
-		width: 100%;
+		width: 97%;
 	}
 }
+
 @import "header";
 @import "header320";
 @import "header768";
-@import "header992";
 @import "home";
+@import "home320";
+@import "home768";
 @import "about-us";
+@import "about-us320";
+@import "about-us768";
 @import "steps";
+@import "steps320";
+@import "steps768";
 @import "projects";
+@import "projects320";
+@import "projects768";
 @import "clients";
+@import "clients320";
+@import "clients768";
 @import "blog";
+@import "blog320";
+@import "blog768";
 @import "contact";
+@import "contact320";
+@import "contact768";
 @import "footer";
+@import "footer320";
+@import "footer768";

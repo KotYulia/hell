@@ -1,0 +1,46 @@
+@media (max-width: 767px) {
+  #footer {
+    padding: 3rem 0.5rem 0;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      line-height: 2.4rem;
+    }
+    .copyright-text {
+      margin-top: 2rem;
+    }
+    #mc-form {
+      margin-bottom: 2rem;
+      .mc-email {
+        padding: 1.2rem 1.4rem;
+      }
+      ::-webkit-input-placeholder {
+        font-size: 1.3rem;
+      }
+      ::-moz-placeholder {
+        font-size: 1.3rem;
+      }
+      ::-moz-placeholder {
+        font-size: 1.3rem;
+      }
+      :-ms-input-placeholder {
+        font-size: 1.3rem;
+      }
+      .mc-button {
+        right: 1.1rem;
+        padding: 1.2rem 1.4rem;
+        margin-top: -4.4rem;
+        &:hover {
+          background-color: #323334;
+        }
+      }
+    }
+    .footer-letter {
+      padding-right: 1rem;
+    }
+  }
+}

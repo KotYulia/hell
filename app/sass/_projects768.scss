@@ -1,0 +1,17 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  #projects {
+    padding: 3rem 1.5rem 5rem;
+    .project-banking, .project-technology, .project-example, .project-estate {
+      margin-bottom: 2rem;
+    }
+    .project-estate {
+      margin: 0 auto 3rem;
+    }
+    .project-link {
+      padding: 0.8rem 2rem;
+    }
+    .full-project-link {
+      padding: 1.6rem 3rem;
+    }
+  }
+}

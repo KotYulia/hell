@@ -1,10 +1,14 @@
 @media (min-width: 768px) and (max-width: 991px) {
   #header {
     .header {
-      .nav-skokov {
-        li {
-          a {
-            //margin-left: 1rem;
+      .header-nav {
+        #navbar {
+          .nav-plus {
+            li {
+              a {
+                padding-left: 1.5rem;
+              }
+            }
           }
         }
       }

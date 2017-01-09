@@ -2,10 +2,12 @@
   .header-top {
     background-color: #262829;
     .header-address {
+      margin-bottom: 0;
       ul {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 0;
+        padding-left: 0;
         li {
           padding: 1.4rem 0;
           a {

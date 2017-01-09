@@ -1,36 +1,65 @@
 @media (max-width: 767px) {
   #header {
-    .header {
-      display: block;
-      margin: 0 auto;
-      .navbar-header {
-        .button-plus {
-          border-color: #000000;
-          margin-top: 2em;
-          position: relative;
-          span {
-            background-color: #ffac55;
-          }
-          &:hover {
-            background-color: #ffeb00;
+    .header-top {
+      .header-address {
+        margin-bottom: 0;
+        ul {
+          margin-bottom: 0;
+          li {
+            padding: 0;
+            a {
+              font-size: 1rem;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              padding: 0;
+            }
+            .contact-email {
+              margin-right: 0.5rem;
+              padding: 1rem 0.5rem 1rem 0;
+            }
+            .contact-phone {
+              padding: 1rem 0 1rem 0.5rem;
+            }
           }
         }
       }
-      .nav-plus {
-        position: absolute;
-        width: 100%;
-        right: 0;
-        z-index: 1;
-        text-align: center;
-        background-color: #ffffff;
-        border: 1px solid #000000;
-        margin: 0;
+    }
+    .header {
+      .header-nav {
         display: block;
-        li {
-
-          a {
-            padding: 0.5em;
-            margin: 0 auto;
+        margin: 0 auto;
+        .navbar-header {
+          .button-plus {
+            border-color: #000000;
+            margin: 0;
+            position: relative;
+            span {
+              background-color: #ffac55;
+            }
+            &:hover {
+              background-color: #ffeb00;
+            }
+          }
+        }
+        #navbar {
+          .nav-plus {
+            position: absolute;
+            width: 100%;
+            right: 0;
+            z-index: 1;
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            li {
+              a {
+                padding: 0.1em 0;
+                margin: 0 auto;
+              }
+            }
           }
         }
       }

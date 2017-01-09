@@ -1,6 +1,11 @@
 #footer {
   background-color: #262829;
   padding: 9.5rem 0 1.4rem;
+  .container {
+    .row {
+      margin: 0;
+    }
+  }
   h2 {
     font-size: 2rem;
     color: #e1e1e1;
@@ -66,7 +71,7 @@
       border-radius: 3rem;
       &:hover {
         color: #ffac55;
-        background-color: transparent;
+        background-color: #323334;
         border: 1px solid #16d428;
       }
     }

@@ -1,9 +1,12 @@
 #blog {
   //background: #e7eff1;
   background: #e7eff1 url('../img/bg-blog.png') right no-repeat;
-  background-size: 50% auto;
+  background-size: 50% 100%;
   .blog-content {
     padding: 9.5rem 0 3.3rem;
+    .row {
+      margin: 0;
+    }
     //position: relative;
     .blog-articles {
       display: flex;

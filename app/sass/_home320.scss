@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+  #home {
+    .home-slider {
+      background: url("../img/bg-slider.png") center/cover no-repeat;
+    }
+    .home-carousel{
+      margin: 20rem 1.8rem 0 0;
+      .carousel-left, .carousel-right {
+        font-size: 2rem;
+        padding: 2.5rem 0.5rem;
+      }
+    }
+    .home-slider-content {
+      .home-info {
+        margin-top: 5rem;
+        p {
+          line-height: 1.6rem;
+        }
+        .info-industry {
+          padding: 1.5rem 2rem 0.5rem;
+          .company-text {
+            font-size: 1.4rem;
+          }
+          .industry-text {
+            font: 300 2.4rem 'Lato', sans-serif;
+          }
+        }
+        .info-education, .info-technology, .info-banking {
+          padding-right: 1.5rem;
+        }
+        .info-business, .info-real-estate, .info-view-more {
+          padding-left: 1.5rem;
+        }
+        .info-education, .info-business, .info-technology, .info-real-estate, .info-banking {
+          >a {
+            padding: 5rem 2rem 2rem 2rem;
+          }
+        }
+        .view-more-link {
+          padding: 4.4rem 0;
+          .view-more {
+            font-size: 1.3rem;
+            padding: 1.5rem 3rem;
+          }
+        }
+      }
+    }
+  }
+}

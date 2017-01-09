@@ -1,0 +1,43 @@
+@media (max-width: 767px) {
+  #about-us {
+    padding: 3rem 1.5rem;
+    .about-us-info {
+      h1 {
+        font-size: 2.5em;
+        line-height: 3rem;
+        span {
+          line-height: 3rem;
+        }
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin: 2rem 0 3.5rem;
+      }
+      a {
+        padding: 1.4rem 2.6rem;
+      }
+    }
+    .about-us-img {
+      img {
+        margin-top: 3rem;
+      }
+      .emblem-block {
+        top: 14rem;
+        right: 9rem;
+        padding: 1.3rem 1.3rem 0.5rem;
+        border: 4px solid #ffffff;
+        p {
+          padding: 0 0.5rem 1rem;
+          .company-age {
+            font-size: 5rem;
+          }
+          &:before {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
