@@ -1,3 +1,77 @@
 #footer {
-
+  background-color: #262829;
+  padding: 9.5rem 0 1.4rem;
+  h2 {
+    font-size: 2rem;
+    color: #e1e1e1;
+    margin: 0 0 3.4rem;
+  }
+  p {
+    font-size: 1.5rem;
+    color: #838b8c;
+    line-height: 2.4rem;
+    margin-bottom: 4.2rem;
+  }
+  ul {
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #838b8c;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    &:hover {
+      color: #ffac55;
+    }
+  }
+  .copyright-text {
+    padding-top: 2.2rem;
+    margin-top: 9.5rem;
+    border-top: 1px solid #323334;
+  }
+  #mc-form {
+    .mc-email {
+      padding: 2.1rem 3.4rem;
+      width: 100%;
+      position: relative;
+      background-color: #323334;
+      border: none;
+      border-radius: 3rem;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 1.3rem;
+      color: #5e5e5e;
+    }
+    ::-moz-placeholder {
+      font-size: 1.3rem;
+      color: #5e5e5e;
+    }
+    ::-moz-placeholder {
+      font-size: 1.3rem;
+      color: #5e5e5e;
+    }
+    :-ms-input-placeholder {
+      font-size: 1.3rem;
+      color: #5e5e5e;
+    }
+    .mc-button {
+      position: absolute;
+      right: 5.5rem;
+      padding: 2.1rem 3.4rem;
+      margin-top: -6.2rem;
+      font-size: 1.5rem;
+      color: #ffffff;
+      background-color: #16d428;
+      border: none;
+      border-radius: 3rem;
+      &:hover {
+        color: #ffac55;
+        background-color: transparent;
+        border: 1px solid #16d428;
+      }
+    }
+  }
+  .footer-letter {
+    padding-right: 5.5rem;
+  }
 }

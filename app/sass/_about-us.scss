@@ -1,0 +1,69 @@
+#about-us {
+  padding: 9.5rem 0;
+  .about-us-info {
+    text-align: right;
+    h1 {
+      margin: 0;
+      font-size: 3.2em;
+      line-height: 3.3rem;
+      span {
+        font-size: 1.4rem;
+        display: block;
+        color: #898e8f;
+        text-transform: uppercase;
+        line-height: 3.3rem;
+      }
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      margin: 3rem 0 4.5rem;
+    }
+    a {
+      padding: 1.4rem 2.6rem;
+      font-size: 1.3rem;
+      color: #ffffff;
+      background-color: #16d428;
+      border-radius: 2.4rem;
+      text-decoration: none;
+      &:hover {
+        color: #ffac55;
+        background-color: transparent;
+        border: 1px solid #16d428;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      float: right;
+      position: relative;
+    }
+    .emblem-block {
+      position: absolute;
+      text-align: center;
+      top: 16rem;
+      right: 11rem;
+      padding: 2.3rem;
+      background-color: #03b6e7;
+      border: 6px solid #ffffff;
+      box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+      p {
+        font-size: 1rem;
+        padding: 0 3rem 3rem;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        .company-age {
+          font-size: 7.5rem;
+          display: block;
+          text-transform: uppercase;
+        }
+        &:before {
+          content: url("../img/about-us-icon.png");
+          display: block;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+}

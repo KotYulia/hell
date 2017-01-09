@@ -1,16 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 body {
+	a, span {
+		font: 400 10px 'Montserrat', sans-serif;
+	}
+	h1, h2 {
+		font: 700 10px 'Montserrat', sans-serif;
+		color: #343a3b;
+		text-transform: uppercase;
+	}
+	p {
+		font: 400 10px 'Domine', serif;
+		color: #838b8c;
+	}
 	ul {
 		list-style: none;
 	}
 }
-
+@media (min-width: 1201px) {
+	.container {
+		width: 120rem;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+@media (max-width: 1200px) {
+	.container {
+		width: 100%;
+	}
+}
 @import "header";
 @import "header320";
 @import "header768";
 @import "header992";
-@import "welcome";
-
+@import "home";
+@import "about-us";
+@import "steps";
+@import "projects";
+@import "clients";
+@import "blog";
+@import "contact";
 @import "footer";

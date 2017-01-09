@@ -1,10 +1,34 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Domine");
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+body a, body span {
+  font: 400 10px 'Montserrat', sans-serif; }
+
+body h1, body h2 {
+  font: 700 10px 'Montserrat', sans-serif;
+  color: #343a3b;
+  text-transform: uppercase; }
+
+body p {
+  font: 400 10px 'Domine', serif;
+  color: #838b8c; }
+
 body ul {
   list-style: none; }
 
+@media (min-width: 1201px) {
+  .container {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 0; } }
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%; } }
+
 #header .header-top {
   background-color: #262829; }
-  #header .header-top .address ul {
+  #header .header-top .header-address ul {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -14,23 +38,28 @@ body ul {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-bottom: 0; }
-    #header .header-top .address ul li {
-      padding: 1.5rem 0; }
-      #header .header-top .address ul li a {
-        font: 400 1.2rem 'Montserrat', sans-serif;
+    #header .header-top .header-address ul li {
+      padding: 1.4rem 0; }
+      #header .header-top .header-address ul li a {
+        font-size: 1.2rem;
         text-decoration: none;
         color: #ffffff;
-        padding: 1.8rem 0 1.8rem 2rem; }
-        #header .header-top .address ul li a .email {
+        text-transform: uppercase; }
+        #header .header-top .header-address ul li a .email {
           color: #727779; }
-        #header .header-top .address ul li a .tel {
+          #header .header-top .header-address ul li a .email:hover {
+            color: #ffac55; }
+        #header .header-top .header-address ul li a .tel {
           color: #a2a5a6; }
-      #header .header-top .address ul li .contact-email {
+          #header .header-top .header-address ul li a .tel:hover {
+            color: #ffac55; }
+      #header .header-top .header-address ul li .contact-email {
         margin-right: 2rem; }
-      #header .header-top .address ul li .contact-phone {
-        border-left: 1px solid #fff; }
+      #header .header-top .header-address ul li .contact-phone {
+        border-left: 1px solid #fff;
+        padding: 1.7rem 0 1.6rem 2rem; }
 
-#header .header {
+#header .header .header-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,24 +72,32 @@ body ul {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  #header .header .navbar-header {
+  #header .header .header-nav .navbar-header {
     margin: 3rem 0; }
-  #header .header .nav-plus {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 58.6rem; }
-    #header .header .nav-plus li a {
-      font: 400 1.4rem 'Montserrat', sans-serif;
-      color: #4e4e4e; }
-      #header .header .nav-plus li a:hover {
-        color: #ffac55;
-        background: transparent; }
+    #header .header .header-nav .navbar-header h1 {
+      margin: 0; }
+  #header .header .header-nav #navbar {
+    padding: 0; }
+    #header .header .header-nav #navbar .nav-plus {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #header .header .header-nav #navbar .nav-plus li a {
+        font-size: 1.4rem;
+        color: #4e4e4e;
+        padding: 0 0 0 3rem; }
+        #header .header .header-nav #navbar .nav-plus li a:hover {
+          color: #ffac55;
+          background: transparent; }
 
 @media (max-width: 767px) {
   #header .header {
@@ -88,5 +125,587 @@ body ul {
         padding: 0.5em;
         margin: 0 auto; } }
 
-#home {
-  background: url("../img/slider-bg.png") center/cover no-repeat; }
+#home .home-slider {
+  background: url("../img/bg-slider.png") center/cover no-repeat; }
+
+#home .home-indicators {
+  display: none; }
+
+#home .home-carousel {
+  width: 0;
+  margin: 23rem 3.2rem 0 0;
+  opacity: 1; }
+  #home .home-carousel .carousel-left, #home .home-carousel .carousel-right {
+    font-size: 3rem;
+    padding: 3.5rem 1rem;
+    background-color: #000; }
+
+#home .home-slider-content .home-info {
+  margin-top: 17rem; }
+  #home .home-slider-content .home-info p {
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 3.6rem; }
+  #home .home-slider-content .home-info .info-industry {
+    background-color: #ffac56;
+    padding: 3.5rem 0 3.5rem 4rem; }
+    #home .home-slider-content .home-info .info-industry .company-text {
+      font-size: 1.4rem; }
+    #home .home-slider-content .home-info .info-industry .industry-text {
+      font: 300 3rem 'Lato', sans-serif; }
+  #home .home-slider-content .home-info .info-education, #home .home-slider-content .home-info .info-technology, #home .home-slider-content .home-info .info-banking {
+    padding-right: 0; }
+  #home .home-slider-content .home-info .info-business, #home .home-slider-content .home-info .info-real-estate, #home .home-slider-content .home-info .info-view-more {
+    padding-left: 0; }
+  #home .home-slider-content .home-info .info-education > a, #home .home-slider-content .home-info .info-business > a, #home .home-slider-content .home-info .info-technology > a, #home .home-slider-content .home-info .info-real-estate > a, #home .home-slider-content .home-info .info-banking > a {
+    background-color: #03b6e7;
+    border: 1px solid #00a6d3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8rem 3rem 4rem 4rem; }
+    #home .home-slider-content .home-info .info-education > a:hover, #home .home-slider-content .home-info .info-business > a:hover, #home .home-slider-content .home-info .info-technology > a:hover, #home .home-slider-content .home-info .info-real-estate > a:hover, #home .home-slider-content .home-info .info-banking > a:hover {
+      background-color: #00a6d3;
+      color: #ffffff; }
+    #home .home-slider-content .home-info .info-education > a .fa, #home .home-slider-content .home-info .info-business > a .fa, #home .home-slider-content .home-info .info-technology > a .fa, #home .home-slider-content .home-info .info-real-estate > a .fa, #home .home-slider-content .home-info .info-banking > a .fa {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 2.6rem;
+      height: 2.6rem;
+      font-size: 1.4rem;
+      border: 1px solid #45cef4;
+      color: #45cef4;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+      #home .home-slider-content .home-info .info-education > a .fa:hover, #home .home-slider-content .home-info .info-business > a .fa:hover, #home .home-slider-content .home-info .info-technology > a .fa:hover, #home .home-slider-content .home-info .info-real-estate > a .fa:hover, #home .home-slider-content .home-info .info-banking > a .fa:hover {
+        color: #ffffff;
+        border: 1px solid #ffffff; }
+  #home .home-slider-content .home-info .view-more-link {
+    background-color: #03b6e7;
+    padding: 6.4rem 0;
+    text-align: center; }
+    #home .home-slider-content .home-info .view-more-link .view-more {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 2.1rem 3.4rem;
+      background-color: #16d428;
+      -webkit-border-radius: 3rem;
+              border-radius: 3rem; }
+      #home .home-slider-content .home-info .view-more-link .view-more:hover {
+        background-color: transparent;
+        border: 2px solid #16d428; }
+  #home .home-slider-content .home-info .education-text {
+    position: relative; }
+    #home .home-slider-content .home-info .education-text:before {
+      content: url("../img/icon-education.png");
+      position: absolute;
+      bottom: 2.5rem; }
+  #home .home-slider-content .home-info .business-text {
+    position: relative; }
+    #home .home-slider-content .home-info .business-text:before {
+      content: url("../img/icon-business.png");
+      position: absolute;
+      bottom: 2.5rem; }
+  #home .home-slider-content .home-info .technology-text {
+    position: relative; }
+    #home .home-slider-content .home-info .technology-text:before {
+      content: url("../img/icon-technology.png");
+      position: absolute;
+      bottom: 2.5rem; }
+  #home .home-slider-content .home-info .real-estate-text {
+    position: relative; }
+    #home .home-slider-content .home-info .real-estate-text:before {
+      content: url("../img/icon-real-estate.png");
+      position: absolute;
+      bottom: 2.5rem; }
+  #home .home-slider-content .home-info .banking-text {
+    position: relative; }
+    #home .home-slider-content .home-info .banking-text:before {
+      content: url("../img/icon-banking.png");
+      position: absolute;
+      bottom: 2.5rem; }
+
+#about-us {
+  padding: 9.5rem 0; }
+  #about-us .about-us-info {
+    text-align: right; }
+    #about-us .about-us-info h1 {
+      margin: 0;
+      font-size: 3.2em;
+      line-height: 3.3rem; }
+      #about-us .about-us-info h1 span {
+        font-size: 1.4rem;
+        display: block;
+        color: #898e8f;
+        text-transform: uppercase;
+        line-height: 3.3rem; }
+    #about-us .about-us-info p {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      margin: 3rem 0 4.5rem; }
+    #about-us .about-us-info a {
+      padding: 1.4rem 2.6rem;
+      font-size: 1.3rem;
+      color: #ffffff;
+      background-color: #16d428;
+      -webkit-border-radius: 2.4rem;
+              border-radius: 2.4rem;
+      text-decoration: none; }
+      #about-us .about-us-info a:hover {
+        color: #ffac55;
+        background-color: transparent;
+        border: 1px solid #16d428; }
+  #about-us .about-us-img img {
+    float: right;
+    position: relative; }
+  #about-us .about-us-img .emblem-block {
+    position: absolute;
+    text-align: center;
+    top: 16rem;
+    right: 11rem;
+    padding: 2.3rem;
+    background-color: #03b6e7;
+    border: 6px solid #ffffff;
+    -webkit-box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3);
+            box-shadow: 0 9px 16px rgba(154, 154, 154, 0.3); }
+    #about-us .about-us-img .emblem-block p {
+      font-size: 1rem;
+      padding: 0 3rem 3rem;
+      border: 1px solid #ffffff;
+      color: #ffffff; }
+      #about-us .about-us-img .emblem-block p .company-age {
+        font-size: 7.5rem;
+        display: block;
+        text-transform: uppercase; }
+      #about-us .about-us-img .emblem-block p:before {
+        content: url("../img/about-us-icon.png");
+        display: block;
+        margin-bottom: 3rem; }
+
+#steps {
+  background-color: #e7eff1;
+  padding: 9.3rem 0; }
+  #steps h1 {
+    font-size: 3.2em;
+    margin: 0 0 2.5rem; }
+  #steps span {
+    font-size: 1.4rem;
+    display: block;
+    color: #898e8f; }
+  #steps .our-steps .step-industry {
+    padding-right: 4.3rem; }
+  #steps .our-steps .step-service {
+    padding: 0 2.9rem 0; }
+  #steps .our-steps .step-business {
+    padding-left: 4.3rem; }
+  #steps .our-steps span {
+    font-size: 2rem;
+    color: #16d428; }
+  #steps .our-steps .industry:before {
+    content: url("../img/step-icon-1.png");
+    display: block;
+    margin-bottom: 3.3rem; }
+  #steps .our-steps .service:before {
+    content: url("../img/step-icon-2.png");
+    display: block;
+    margin-bottom: 3.5rem; }
+  #steps .our-steps .business:before {
+    content: url("../img/step-icon-3.png");
+    display: block;
+    margin-bottom: 3rem; }
+  #steps .our-steps h2 {
+    font-size: 1.8rem;
+    margin: 1.6rem 0 3.3rem; }
+  #steps .our-steps p {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 0; }
+
+#projects {
+  padding: 9.5rem 0 11.2rem;
+  text-align: center; }
+  #projects h1 {
+    text-align: left;
+    font-size: 3.2em;
+    margin: 0 0 3.5rem;
+    line-height: 3.3rem; }
+  #projects span {
+    font-size: 1.4rem;
+    display: block;
+    color: #898e8f;
+    line-height: 3.3rem; }
+  #projects .project-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 14px;
+    left: 14px;
+    bottom: 0;
+    background-color: #ffac56;
+    text-align: center; }
+    #projects .project-hover a {
+      font-size: 1.8rem;
+      line-height: 3.3rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none; }
+    #projects .project-hover p {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      color: #fffdfa;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 2rem;
+      text-overflow: ellipsis; }
+  #projects .project-banking img, #projects .project-technology img, #projects .project-example img, #projects .project-estate img {
+    width: 100%;
+    position: relative; }
+  #projects .project-banking:before, #projects .project-technology:before, #projects .project-example:before, #projects .project-estate:before {
+    content: '\f067';
+    font-family: FontAwesome;
+    font-size: 2rem;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 2.4rem;
+    z-index: 1; }
+  #projects .project-banking:after, #projects .project-technology:after, #projects .project-example:after, #projects .project-estate:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5.6rem 0 0 5.6rem;
+    border-color: transparent transparent transparent #03b6e7; }
+  #projects .project-banking:hover .project-hover, #projects .project-technology:hover .project-hover, #projects .project-example:hover .project-hover, #projects .project-estate:hover .project-hover {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #projects .project-estate {
+    margin: 3rem auto 6rem; }
+  #projects .project-link {
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    padding: 1.2rem 2.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid #ffac56;
+    -webkit-border-radius: 2rem;
+            border-radius: 2rem;
+    color: #ffffff;
+    text-transform: uppercase; }
+  #projects .full-project-link {
+    font-size: 1.3rem;
+    padding: 1.7rem 3rem;
+    color: #ffffff;
+    background-color: #16d428;
+    text-decoration: none;
+    -webkit-border-radius: 2.5rem;
+            border-radius: 2.5rem; }
+    #projects .full-project-link:hover {
+      color: #ffac55;
+      background-color: transparent;
+      border: 1px solid #16d428; }
+
+#clients {
+  background-color: #03b6e7;
+  padding: 9.5rem 0 10.9rem; }
+  #clients h1 {
+    font-size: 3.2em;
+    margin: 0 0 2.5rem;
+    color: #ffffff;
+    margin-bottom: 5.7rem; }
+  #clients span {
+    font-size: 1.4rem;
+    display: block;
+    color: #a6ecff; }
+  #clients .clients-slider .clients-carousel {
+    width: 0;
+    display: none; }
+  #clients .clients-slider .clients-slider-content .clients-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    #clients .clients-slider .clients-slider-content .clients-info p {
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      color: #ddf8ff;
+      margin-bottom: 5.8rem; }
+      #clients .clients-slider .clients-slider-content .clients-info p span {
+        display: block;
+        margin-top: 3.5rem; }
+    #clients .clients-slider .clients-slider-content .clients-info:before {
+      content: url("../img/icon-opening-quotation.png");
+      margin-right: 3rem; }
+    #clients .clients-slider .clients-slider-content .clients-info:after {
+      content: url("../img/icon-closing-quotation.png");
+      margin-left: 8rem; }
+  #clients .clients-slider ol {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+  #clients .clients-slider .clients-indicators {
+    margin-top: 2.5rem;
+    float: right;
+    /* :before {
+        content: '\f192';
+        color: #16d428;
+      }*/ }
+    #clients .clients-slider .clients-indicators .fa {
+      font-size: 1.5rem;
+      color: #ffffff; }
+      #clients .clients-slider .clients-indicators .fa:hover {
+        color: #16d428; }
+  #clients .clients-slider .clients-indicators-info {
+    /*.active {
+        img {
+          opacity: 1;
+        }
+      }*/ }
+    #clients .clients-slider .clients-indicators-info li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #clients .clients-slider .clients-indicators-info li img {
+        margin-right: 3rem; }
+        #clients .clients-slider .clients-indicators-info li img:hover {
+          opacity: 1;
+          background-color: #ffffff;
+          -webkit-border-radius: 50%;
+                  border-radius: 50%; }
+      #clients .clients-slider .clients-indicators-info li p {
+        font-size: 1.5rem;
+        color: #ddf8ff;
+        margin-bottom: 0; }
+      #clients .clients-slider .clients-indicators-info li .client-name {
+        font: 700 1.5rem 'Montserrat', sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem; }
+    #clients .clients-slider .clients-indicators-info .client-first img {
+      opacity: 0.5; }
+
+#blog {
+  background: #e7eff1 url("../img/bg-blog.png") right no-repeat;
+  background-size: 50% auto; }
+  #blog .blog-content {
+    padding: 9.5rem 0 3.3rem;
+    /*&:after {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 50%;
+      background: url('../img/bg-blog.png') center no-repeat;
+      background-size: 100%;
+    }*/ }
+    #blog .blog-content .blog-articles {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    #blog .blog-content h1 {
+      font-size: 3.2em;
+      margin: 0 0 2.5rem;
+      display: inline-block; }
+    #blog .blog-content span {
+      font-size: 1.4rem;
+      display: block;
+      color: #898e8f; }
+    #blog .blog-content a {
+      text-decoration: none;
+      text-transform: uppercase; }
+    #blog .blog-content .top-posts-link, #blog .blog-content .all-posts-link {
+      font-size: 1.2rem;
+      color: #606668;
+      border: 2px solid #989fa0;
+      -webkit-border-radius: 2rem;
+              border-radius: 2rem;
+      color: #606668; }
+      #blog .blog-content .top-posts-link:hover, #blog .blog-content .all-posts-link:hover {
+        border: 2px solid #ffac56; }
+    #blog .blog-content .top-posts-link {
+      padding: 1.2rem 3.8rem; }
+    #blog .blog-content .all-posts-link {
+      padding: 1.2rem 2.1rem; }
+    #blog .blog-content article p {
+      font-size: 1.5rem;
+      line-height: 2.8rem;
+      margin: 2.7rem auto 6rem; }
+    #blog .blog-content article h2 {
+      margin: 1.2rem 0 0; }
+      #blog .blog-content article h2 a {
+        font-size: 1.8rem;
+        color: #343a3b; }
+        #blog .blog-content article h2 a:hover {
+          color: #ffac56; }
+    #blog .blog-content article .green-text {
+      color: #16d428;
+      display: inline-block; }
+
+#contact {
+  padding: 9.5rem 0; }
+  #contact h1 {
+    font-size: 3.2em;
+    margin: 0 0 3.3rem;
+    display: inline-block; }
+  #contact span {
+    font-size: 1.4rem;
+    display: block;
+    color: #898e8f; }
+  #contact ul {
+    padding-left: 0;
+    margin-bottom: 0; }
+    #contact ul li div {
+      padding: 4rem 3rem 4rem 13rem;
+      border: 1px solid #e1eaec; }
+      #contact ul li div a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: #343a3b; }
+        #contact ul li div a span {
+          font-size: 1.8rem;
+          color: #343a3b;
+          line-height: 2.8rem; }
+          #contact ul li div a span:hover {
+            color: #ffac55; }
+    #contact ul li .contact-email {
+      position: relative; }
+      #contact ul li .contact-email:before {
+        content: url("../img/icon-email.png");
+        position: absolute;
+        right: 10rem; }
+    #contact ul li .contact-tel {
+      position: relative; }
+      #contact ul li .contact-tel:before {
+        content: url("../img/icon-call.png");
+        position: absolute;
+        right: 10rem; }
+    #contact ul li .contact-career {
+      position: relative; }
+      #contact ul li .contact-career:before {
+        content: url("../img/icon-career.png");
+        position: absolute;
+        right: 10rem; }
+
+#footer {
+  background-color: #262829;
+  padding: 9.5rem 0 1.4rem; }
+  #footer h2 {
+    font-size: 2rem;
+    color: #e1e1e1;
+    margin: 0 0 3.4rem; }
+  #footer p {
+    font-size: 1.5rem;
+    color: #838b8c;
+    line-height: 2.4rem;
+    margin-bottom: 4.2rem; }
+  #footer ul {
+    padding: 0; }
+  #footer a {
+    text-decoration: none;
+    color: #838b8c;
+    font-size: 1.3rem;
+    line-height: 3rem; }
+    #footer a:hover {
+      color: #ffac55; }
+  #footer .copyright-text {
+    padding-top: 2.2rem;
+    margin-top: 9.5rem;
+    border-top: 1px solid #323334; }
+  #footer #mc-form .mc-email {
+    padding: 2.1rem 3.4rem;
+    width: 100%;
+    position: relative;
+    background-color: #323334;
+    border: none;
+    -webkit-border-radius: 3rem;
+            border-radius: 3rem; }
+  #footer #mc-form ::-webkit-input-placeholder {
+    font-size: 1.3rem;
+    color: #5e5e5e; }
+  #footer #mc-form ::-moz-placeholder {
+    font-size: 1.3rem;
+    color: #5e5e5e; }
+  #footer #mc-form ::-moz-placeholder {
+    font-size: 1.3rem;
+    color: #5e5e5e; }
+  #footer #mc-form :-ms-input-placeholder {
+    font-size: 1.3rem;
+    color: #5e5e5e; }
+  #footer #mc-form .mc-button {
+    position: absolute;
+    right: 5.5rem;
+    padding: 2.1rem 3.4rem;
+    margin-top: -6.2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #16d428;
+    border: none;
+    -webkit-border-radius: 3rem;
+            border-radius: 3rem; }
+    #footer #mc-form .mc-button:hover {
+      color: #ffac55;
+      background-color: transparent;
+      border: 1px solid #16d428; }
+  #footer .footer-letter {
+    padding-right: 5.5rem; }

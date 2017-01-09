@@ -1,58 +1,69 @@
 #header {
   .header-top {
-    //width: 100%;
     background-color: #262829;
-    .address {
+    .header-address {
       ul {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 0;
         li {
-          padding: 1.5rem 0;
+          padding: 1.4rem 0;
           a {
-            font: 400 1.2rem 'Montserrat', sans-serif;
+            font-size: 1.2rem;
             text-decoration: none;
             color: #ffffff;
-            padding: 1.8rem 0 1.8rem 2rem;
+            text-transform: uppercase;
             .email {
               color: #727779;
-
+              &:hover {
+                color: #ffac55;
+              }
             }
             .tel {
               color: #a2a5a6;
-
+              &:hover {
+                color: #ffac55;
+              }
             }
           }
           .contact-email {
             margin-right: 2rem;
-
           }
           .contact-phone {
             border-left: 1px solid #fff;
+            padding: 1.7rem 0 1.6rem 2rem;
           }
         }
       }
     }
   }
   .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .navbar-header {
-      margin: 3rem 0;
-
-    }
-    .nav-plus {
+    .header-nav {
       display: flex;
       justify-content: space-between;
-      width: 58.6rem;
-      li {
-        a {
-          font: 400 1.4rem 'Montserrat', sans-serif;
-          color: #4e4e4e;
-          &:hover {
-            color: #ffac55;
-            background: transparent;
+      align-items: center;
+      .navbar-header {
+        margin: 3rem 0;
+        h1 {
+          margin: 0;
+        }
+      }
+      #navbar {
+        padding: 0;
+        .nav-plus {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          li {
+            a {
+              font-size: 1.4rem;
+              color: #4e4e4e;
+              padding: 0 0 0 3rem;
+              &:hover {
+                color: #ffac55;
+                background: transparent;
+              }
+            }
           }
         }
       }
