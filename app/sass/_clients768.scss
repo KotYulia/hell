@@ -1,0 +1,31 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  #clients {
+    padding: 3rem 0 0;
+    h1 {
+      margin: 0 0 3rem;
+    }
+    .clients-slider {
+      .clients-slider-content {
+        .clients-info{
+          p {
+            margin: 0 2rem 2rem;
+          }
+          &:before {
+            margin-right: 0;
+          }
+          &:after {
+            margin-left: 0;
+          }
+        }
+      }
+      ol {
+        margin-bottom: 3rem;
+      }
+      .clients-indicators {
+        margin-top: 0;
+        float: none;
+        text-align: end;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+  #contact {
+    padding: 3rem 1.5rem 1rem;
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0 2rem;
+    }
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      .address-email {
+        padding: 0 0.5rem;
+      }
+      .address-tel {
+        padding: 0 0.7rem;
+      }
+      .address-career {
+        padding-left: 0.2rem;
+      }
+      li {
+        div {
+          padding: 3rem 1rem 3rem 8rem;
+          margin-bottom: 2rem;
+          a {
+            font-size: 1.6rem;
+            span {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .contact-email {
+          &:before {
+            right: 6rem;
+          }
+        }
+        .contact-tel {
+          &:before {
+            right: 8rem;
+          }
+        }
+        .contact-career {
+          &:before {
+            right: 8rem;
+          }
+        }
+      }
+    }
+  }
+}

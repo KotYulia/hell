@@ -1,0 +1,135 @@
+#home {
+  .home-slider {
+    background: url("../img/bg-slider.png") center/cover no-repeat;
+  }
+  .home-indicators {
+    display: none;
+  }
+  .home-carousel{
+    width: 0;
+    margin: 23rem 3.2rem 0 0;
+    opacity: 1;
+    .carousel-left, .carousel-right {
+      font-size: 3rem;
+      padding: 3.5rem 1rem;
+      background-color: #000;
+    }
+  }
+  .home-slider-content {
+    .home-info {
+      margin-top: 17rem;
+      p {
+        color: #ffffff;
+        text-transform: uppercase;
+        line-height: 3.6rem;
+      }
+      .info-industry {
+        background-color: #ffac56;
+        padding: 3.5rem 0 3.5rem 4rem;
+        .company-text {
+          font-size: 1.4rem;
+        }
+        .industry-text {
+          font: 300 3rem 'Lato', sans-serif;
+        }
+      }
+      .info-education, .info-technology, .info-banking {
+        padding-right: 0;
+      }
+      .info-business, .info-real-estate, .info-view-more {
+        padding-left: 0;
+      }
+      .info-education, .info-business, .info-technology, .info-real-estate, .info-banking {
+        >a {
+          background-color: #03b6e7;
+          border: 1px solid #00a6d3;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.4rem;
+          color: #ffffff;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 8rem 3rem 4rem 4rem;
+          &:hover {
+            background-color: #00a6d3;
+            color: #ffffff;
+          }
+          .fa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.6rem;
+            height: 2.6rem;
+            font-size: 1.4rem;
+            border: 1px solid #45cef4;
+            color: #45cef4;
+            border-radius: 50%;
+            &:hover {
+              color: #ffffff;
+              border: 1px solid #ffffff;
+            }
+          }
+        }
+      }
+      .view-more-link {
+        background-color: #03b6e7;
+        padding: 6.4rem 0;
+        text-align: center;
+        .view-more {
+          font-size: 1.3rem;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #ffffff;
+          padding: 2.1rem 3.4rem;
+          background-color: #16d428;
+          border-radius: 3rem;
+          &:hover {
+            background-color: transparent;
+            border: 2px solid #16d428;
+          }
+        }
+      }
+      .education-text {
+        position: relative;
+        &:before {
+          content: url("../img/icon-education.png");
+          position: absolute;
+          bottom: 2.5rem;
+        }
+      }
+      .business-text {
+        position: relative;
+        &:before {
+          content: url("../img/icon-business.png");
+          position: absolute;
+          bottom: 2.5rem;
+        }
+      }
+      .technology-text {
+        position: relative;
+        &:before {
+          content: url("../img/icon-technology.png");
+          position: absolute;
+          bottom: 2.5rem;
+        }
+      }
+      .real-estate-text {
+        position: relative;
+        &:before {
+          content: url("../img/icon-real-estate.png");
+          position: absolute;
+          bottom: 2.5rem;
+        }
+      }
+      .banking-text {
+        position: relative;
+        &:before {
+          content: url("../img/icon-banking.png");
+          position: absolute;
+          bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}

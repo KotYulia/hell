@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+  #clients {
+    padding: 3rem 0 0;
+    h1 {
+      font-size: 2.5em;
+      margin: 0 0 3rem;
+    }
+    .clients-slider {
+      .clients-slider-content {
+        .clients-info{
+          display: flex;
+          p {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin: 0 3.5rem 2rem;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            width: 7rem;
+            height: 7rem;
+            background: url("../img/icon-opening-quotation.png") no-repeat;
+            background-size: 40%;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            right: -4rem;
+            width: 7rem;
+            height: 7rem;
+            background: url("../img/icon-closing-quotation.png") no-repeat;
+            background-size: 40%;
+          }
+        }
+      }
+      ol {
+        margin-bottom: 3rem;
+      }
+      .clients-indicators {
+        margin-top: 0;
+      }
+      .clients-indicators-info {
+        li {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

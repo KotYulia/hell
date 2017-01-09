@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  #projects {
+    padding: 3rem 1.5rem;
+    h1 {
+      font-size: 2.5em;
+      margin: 0 0 2rem;
+      line-height: 3rem;
+    }
+    span {
+      font-size: 1.4rem;
+      line-height: 3rem;
+    }
+    .project-hover {
+      a {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+    .project-banking, .project-technology, .project-example, .project-estate {
+      margin-bottom: 2rem;
+    }
+    .project-estate {
+      margin: 0 auto 4rem;
+    }
+    .project-link {
+      padding: 0.8rem 2rem;
+    }
+    .full-project-link {
+      padding: 1.4rem 2rem;
+    }
+  }
+}

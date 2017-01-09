@@ -1,0 +1,105 @@
+#projects {
+  padding: 9.5rem 0 11.2rem;
+  text-align: center;
+  h1 {
+    text-align: left;
+    font-size: 3.2em;
+    margin: 0 0 3.5rem;
+    line-height: 3.3rem;
+  }
+  span {
+    font-size: 1.4rem;
+    display: block;
+    color: #898e8f;
+    line-height: 3.3rem;
+  }
+  .project-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    bottom: 0;
+    background-color: #ffac56;
+    text-align: center;
+    a {
+      font-size: 1.8rem;
+      line-height: 3.3rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+      color: #fffdfa;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 0 2rem;
+      text-overflow: ellipsis;
+    }
+  }
+  .project-banking, .project-technology, .project-example, .project-estate {
+    img {
+      //display: block;
+      width: 100%;
+      position: relative;
+    }
+    &:before {
+      content: '\f067';
+      font-family: FontAwesome;
+      font-size: 2rem;
+      color: #ffffff;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 2.4rem;
+      z-index: 1;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5.6rem 0 0 5.6rem;
+      border-color: transparent transparent transparent #03b6e7;
+    }
+    &:hover .project-hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .project-estate {
+    margin: 3rem auto 6rem;
+  }
+  .project-link {
+    position: absolute;
+    left: 3rem;
+    top: 2rem;
+    padding: 1.2rem 2.8rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: 2px solid #ffac56;
+    border-radius: 2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .full-project-link {
+    font-size: 1.3rem;
+    padding: 1.7rem 3rem;
+    color: #ffffff;
+    background-color: #16d428;
+    text-decoration: none;
+    border-radius: 2.5rem;
+    &:hover {
+      color: #ffac55;
+      background-color: transparent;
+      border: 1px solid #16d428;
+    }
+  }
+}

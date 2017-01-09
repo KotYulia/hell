@@ -1,39 +1,60 @@
-@font-face {
-	font-family: "Century Gothic";
-	src: url(../fonts/CenturyGothic.ttf);
-	src: url(../fonts/CenturyGothic.eot);
-	src: url(../fonts/CenturyGothic.svg);
-	src: url(../fonts/CenturyGothic.woff);
-}
-@font-face {
-	font-family: "Code";
-	src: url(../fonts/Code-Light.ttf);
-	src: url(../fonts/Code-Light.otf);
-	src: url(../fonts/Code-Light.eot);
-	src: url(../fonts/Code-Light.svg);
-	src: url(../fonts/Code-Light.woff);
-}
-/*@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
 
 body {
-	h1, p, span, a {
-		font: 400 10px 'Century Gothic', Regular;
-	}
-	h2 {
-		font: 300 10px 'Code', Light;
+	a, span {
+		font: 400 10px 'Montserrat', sans-serif;
 	}
 	h1, h2 {
+		font: 700 10px 'Montserrat', sans-serif;
+		color: #343a3b;
 		text-transform: uppercase;
+	}
+	p {
+		font: 400 10px 'Domine', serif;
+		color: #838b8c;
 	}
 	ul {
 		list-style: none;
+	}
+}
+@media (min-width: 1260px) {
+	.container {
+		width: 120rem;
+
+	}
+}
+@media (max-width: 1261px) {
+	.container {
+		width: 97%;
 	}
 }
 
 @import "header";
 @import "header320";
 @import "header768";
-@import "header992";
-@import "welcome";
-
+@import "home";
+@import "home320";
+@import "home768";
+@import "about-us";
+@import "about-us320";
+@import "about-us768";
+@import "steps";
+@import "steps320";
+@import "steps768";
+@import "projects";
+@import "projects320";
+@import "projects768";
+@import "clients";
+@import "clients320";
+@import "clients768";
+@import "blog";
+@import "blog320";
+@import "blog768";
+@import "contact";
+@import "contact320";
+@import "contact768";
 @import "footer";
+@import "footer320";
+@import "footer768";
